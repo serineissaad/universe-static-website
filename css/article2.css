@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: inline;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    box-sizing: border-box;
+    background: black;
+    margin-bottom: 60px;
+  }
+
+main {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+.aside1{
+    display: block;
+    position: relative;
+    width: 20%;
+}
+.main{
+    margin-top: 70px;
+    display: block;
+    text-align: left;
+    position: relative;
+    width: 60%;
+    justify-content: left;
+}
+
+.aside1 ul{
+    margin-top: 70px;
+    list-style: none;
+    position: fixed;
+    top: 100px; left: 0;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px #ff0084;
+}
+
+.aside1 ul li{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.aside1 ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    /*background: scroll;*/
+}
+
+.aside1 ul li a:hover{
+    color: palevioletred;
+    /**/background: scroll;
+}
+
+section{
+    height: 100vh;
+    width: 100vh;
+    display: block;
+    align-items: left;
+    justify-items: left;
+    justify-content: left;
+    margin-top: 100px;
+    margin-bottom: 300px;
+
+}
+
+article{
+    height: 100vh;
+    width: 100vh;
+    display: block;
+    align-items: left;
+    justify-items: left;
+    justify-content: left;
+    margin-top: 100px;
+
+}
+
+aside{
+    height: 100vh;
+    width: 100vh;
+    display: block;
+    align-items: left;
+    justify-items: left;
+    justify-content: left;
+    margin-top: 100px;
+    margin-bottom: 300px;
+
+}
+
+img{
+    width: 25rem;
+    height: 20rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+figure img{
+    height: 100%;
+    width: 100%;   
+    margin-bottom: 50px;
+}
+
+.main p{
+    color: rgb(254, 254, 255);
+}
+
+.main h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(254, 254, 255);
+}
+.main h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(254, 254, 255);
+}
+
+.main a{
+    color: palevioletred;
+}
+
+.main ul li{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(254, 254, 255);
+}
+
+/*bare de nnavigation des articles*/
+.aside2{
+    background:transparent;
+    width: 20%;
+    display: block;
+    position: relative;
+}
+
+
+.artnav{
+    background-color: transparent;
+    text-align:center;
+}
+.artnav ul{
+    background: transparent;
+    margin-top: 70px;
+    display: block;
+    margin-right: 50xp;
+    list-style: none;
+
+}
+
+.artnav ul li{
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ff0084;
+}
+
+
+.artnav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.artnav ul li:hover{
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.719);
+    color: #fff;
+}
+
+.artnav ul li a:hover{
+    color: #ff0084;
+   
+}
+
+.artnav .active{
+    background-color: rgba(215, 152, 173, 0.701);
+    font-size: 18px;
+}
+
+
+
+/*donner une importance semantique sans metter le mot/phrase en gras*/
+strong{
+    font-weight: normal;
+}
+
+
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0,0,0,0.2);
+  }
+  
+  .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  
+.nav-links a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+   /* background-color: rgb(240, 144, 107);*/
+  text-decoration: underline;
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(52, 175, 212);
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
